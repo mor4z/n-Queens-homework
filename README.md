@@ -41,6 +41,14 @@ Experimental data shows a massive performance gap as the problem scales.
 | **Internal Conflicts** | N/A | **0** | 5,923 |
 | **Scalability** | Exponential | **Near-Linear** | Polynomial |
 
+## 📈 Performance Visualizations
+
+### A* Search Performance
+![A* Performance Analysis](A*_graphs.png)
+
+### CSP Solver Performance
+![CSP Performance Analysis](CSP_graphs.png)
+
 ### Key Findings
 - **The A-star Bottleneck**: For $N > 20$, the branching factor (exceeding 800 at $N=30$) and the cost of heuristic evaluation in Python lead to a "complexity wall." Execution time becomes highly sensitive to the initial configuration.
 - **The CSP Efficiency**: The CP-SAT solver remains nearly instantaneous for $N=30$. In most cases, **Internal Conflicts remain at 0**, proving that *Constraint Propagation* prunes the search space perfectly without the need for backtracking.
