@@ -42,13 +42,13 @@ Experimental data shows a massive performance gap as the problem scales.
 | **Scalability** | Exponential | **Near-Linear** | Polynomial |
 
 ### Key Findings
-- **The A* Bottleneck**: For $N > 20$, the branching factor (exceeding 800 at $N=30$) and the cost of heuristic evaluation in Python lead to a "complexity wall." Execution time becomes highly sensitive to the initial configuration.
+- **The A-star Bottleneck**: For $N > 20$, the branching factor (exceeding 800 at $N=30$) and the cost of heuristic evaluation in Python lead to a "complexity wall." Execution time becomes highly sensitive to the initial configuration.
 - **The CSP Efficiency**: The CP-SAT solver remains nearly instantaneous for $N=30$. In most cases, **Internal Conflicts remain at 0**, proving that *Constraint Propagation* prunes the search space perfectly without the need for backtracking.
 - **Stress Testing**: While A* is unfeasible for large boards, the CSP paradigm successfully solves $N=300$ in approximately 98 seconds, demonstrating industrial-grade scalability.
 
 ## 💻 Execution Guide
 1. **Load the Notebook**: Open `N_Queens_Project.ipynb` in Jupyter or Google Colab.
-2. **Run A* Tests**: Execute the first block to see A* metrics for $N \in [4, 30]$.
+2. **Run A-star Tests**: Execute the first block to see A* metrics for $N \in [4, 30]$.
 3. **Run CSP Solver**: Execute the second block to solve dimensions up to $N=300$.
 4. **View Analytics**: The final cells will generate summary tables and bar charts comparing Time, Conflicts, and Branches.
 
