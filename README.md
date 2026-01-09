@@ -39,7 +39,6 @@ Experimental data shows a massive performance gap as the problem scales.
 | **Execution Time** | ~18.2s - 24.4s | **~0.025s** | ~98.7s |
 | **Search Effort** | 720 - 955 Nodes | 434 - 776 Branches | 634,689 Branches |
 | **Internal Conflicts** | N/A | **0** | 5,923 |
-| **Scalability** | Exponential | **Near-Linear** | Polynomial |
 
 ## 📈 Performance Visualizations
 
