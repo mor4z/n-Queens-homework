@@ -44,7 +44,7 @@ Experimental data shows a massive performance gap as the problem scales.
 ## 📈 Performance Visualizations
 
 ### A* Search Performance
-![A* Performance Analysis](A*_graphs.png)
+![A* Performance Analysis](Astar_graphs.png)
 
 ### CSP Solver Performance
 ![CSP Performance Analysis](CSP_graphs.png)
